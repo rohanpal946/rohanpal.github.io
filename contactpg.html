@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        li a:hover {
+            background-color: #cdd6a8;
+            text-decoration: underline;
+        }
+
+        .background-image {
+            background-image: url("img13.svg");
+            background-size: cover;
+           
+           
+            right: 0;
+            height: 100vh;
+            width: auto;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 380px;
+            
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-map {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .image-map img {
+            margin: 0 10px;
+        }
+
+        .image-map map area {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body style="font-family:Cambria">
+    <ul>
+        <li><a href="contactpg.html" style="font-weight: bold;">Contact</a></li>
+        <li><a href="resumepg.html" style="font-weight: bold;">Resume</a></li>
+        <li><a href="testimonials.html" style="font-weight:
+bold;">Testimonials</a></li>
+        <li><a href="skillspg.html" style="font-weight: bold;">Skills</a></li>
+        <li><a href="portfolio.html" style="font-weight: bold;">Portfolio</a></li>
+        <li><a href="aboutpg.html" style="font-weight: bold;">About</a></li>
+        <li><a href="index.html" style="font-weight: bold;" target="_self">Home</a></li>
+    </ul>
+    <br>
+    <div class="background-image">
+        <br>
+        
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your
+name..">
+
+                <br><label for="subject">Subject</label><br>
+                <textarea id="subject" name="subject" placeholder="Write something..." style="height:100px"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="image-map">
+            <img src="https://i.pinimg.com/736x/b2/a3/fb/b2a3fbd8bd83857c74ff274ecd79c40f.jpg" width="50px" height="50px"
+                class="center" usemap="#im_map">
+            <map name="im_map">
+                <area alt="rohanpal8846@gmail.com" title="rohanpal8846@gmail.com" href="https://mailto:rohanpal6@gmail.com" coords="11,18,627,622" shape="rect">
+            </map>
+            <img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icondesign_1017-
+45418.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706572800&semt=ais" width="50px" height="50px" class="center"
+                usemap="#ima_map">
+            <map name="ima_map">
+                <area alt="@Rohan Pal" title="@Rohan Pal" href="https://x.com/rohanpal946?t=lKHC2XkCfynZdm2_vLz_wA&s=09"
+                    coords="11,18,627,622" shape="rect">
+            </map><br>
+            <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" width="50px" height="50px" class="center"
+                usemap="#image_map">
+            <map name="image_map">
+                <area alt="@rohan_pal" title="@rohan_pal" href="https://www.linkedin.com/in/rohan-pal-420b62251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" coords="11,18,497,487" shape="rect">
+            </map>
+        </div>
+    </div>
+</body>
+<script>
+   
+var form = document.querySelector('form');
+var nameInput = document.getElementById('fname');
+var subjectInput = document.getElementById('subject');
+
+
+form.addEventListener('submit', function(event) {
+  
+  event.preventDefault();
+
+  
+  if (!/^[a-zA-Z\s]+$/.test(nameInput.value)) {
+    alert('Please enter only alphabets in the name.');
+    return;
+  }
+
+  
+  if (subjectInput.value.trim() === '') {
+    alert('Please enter a subject.');
+    return;
+  }
+
+  
+  form.submit();
+});
+
+</script>
+
+</html>

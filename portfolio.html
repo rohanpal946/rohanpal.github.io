@@ -1,0 +1,255 @@
+<!DOCTYPE html <html>
+
+<head>
+    <title>portfolio</title>
+    <style>
+        .project {
+            display: flex;
+            float: inline-start;
+            justify-content: center;
+            width: 45%;
+            margin: 1%;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            width: 100%;
+            height: 50vh;
+            float: left;
+            margin-right: 2%;
+        }
+
+        .project h3 {
+            margin: 0 0 10px;
+        }
+
+        .project p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .project {
+                width: 100%;
+            }
+
+            .project img {
+                width: 30%;
+                float: none;
+                margin: 0 auto 20px;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: right;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 100%;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .background-image {
+            background-color: #b6a1e3;
+            height: 500vh;
+            width: auto;
+        }
+
+        li a:hover {
+            background-color: #cdd6a8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="contactpg.html" style="font-weight:
+bold;">Contact</a></li>
+        <li><a href="resumepg.html" style="font-weight: bold;">Resume</a></li>
+        <li><a href="testimonials.html" style="font-weight:
+bold;">Testimonials</a></li>
+        <li><a href="skillspg.html" style="font-weight: bold;">Skills</a></li>
+        <li><a href="index.html" style="font-weight:
+bold;">Portfolio</a></li>
+        <li><a href="aboutpg.html" style="font-weight: bold;">About</a></li>
+        <li><a href="homepg.html" style="font-weight: bold;" target="_self">Home</a></li>
+    </ul>
+    <br>
+    <div class="background-image">
+        <br>
+        <div class="project">
+            <div class="gallery">
+                <img src="img3.png" alt="library management">
+                <div>
+                    <h3>Library Management System (LMS) in Java</h3>
+                    <p>Description:<br>
+                        This project developed a fully functional Library
+                        Management System in Java capable of managing
+                        books, members, and borrowing/returning processes.
+                        Built with user-friendliness and efficiency
+                        in mind, it offers a comprehensive solution for
+                        libraries and individuals.<br><br>
+                        Key Features:<br>
+                        Member Management: Registering, searching, updating
+                        member information.<br>
+                        Book Management: Adding, searching, updating book
+                        details (title, author, genre,
+                        availability).<br>
+                        Borrowing/Returning: Borrowing and returning books
+                        with due date management and fine
+                        calculation.<br>
+                        Search Functionality: Searching books by title,
+                        author, genre, or keyword.<br>
+                        Reporting: Generating reports on borrowed books,
+                        overdue books, and member activity.<br>
+                        User Interface: Intuitive and interactive GUI for
+                        seamless user experience.<br>
+                        Data Persistence: Store and retrieve data using a
+                        database (e.g., MySQL) for
+                        persistence.<br><br>
+                        Skills Demonstrated:<br>
+                        Java Programming: Core Java concepts, object-oriented
+                        programming principles, exception
+                        handling, data structures (collections, lists), file
+                        handling, multithreading.<br>
+                        Database Management: Connecting to and interacting
+                        with a database using JDBC, performing CRUD
+                        operations.<br>
+                        GUI Development: Designing and implementing user
+                        interfaces using Java Swing/JavaFX
+                        libraries.<br>
+                        Algorithms and Data Structures: Applying appropriate
+                        algorithms for searching, sorting, and data
+                        manipulation.<br>
+                        Software Design Principles: Modular design, code
+                        reusability, error handling, and clean coding
+                        practices.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="gallery">
+                <img src="img4.png" alt="bus management">
+                <div>
+                    <h3>Bus Reservation System in C++</h3>
+                    <p>Description:<br>
+                        This project involved the creation of a bus
+                        reservation system using C++. It allows users
+                        to:<br><br>
+                        View available bus routes and schedules<br>
+                        Search for specific buses based on departure/arrival
+                        city, date, and time<br>
+                        Select desired seats and book tickets<br>
+                        Manage booked tickets (view, cancel, modify)<br>
+                        (Optional) User accounts and login for personalized
+                        booking history and preferences<br><br>
+                        Key Features:<br>
+                        Data Management: Utilizes C++ data structures like
+                        arrays, vectors, or custom classes to manage
+                        bus information (routes, schedules, seats,
+                        bookings).<br>
+                        File Handling: Efficiently reads and writes bus data
+                        from files for persistent storage.<br>
+                        Input/Output: User-friendly interface for interacting
+                        with the system through menus, prompts,
+                        and data validation.<br>
+                        Algorithms: Implements search algorithms to find
+                        specific buses and seat availability
+                        checks.<br><br>
+                        Skills Acquired/Demonstrated:<br>
+                        Object-Oriented Programming (OOP): Designing classes,
+                        data structures, and relationships between
+                        them.<br>
+                        C++ Language Features: Applying control flow
+                        statements, operators, functions, and data types
+                        effectively.<br>
+                        Problem-Solving: Analyzing user needs and translating
+                        them into functional code.<br>
+                        Algorithm Design: Implementing search and data
+                        management algorithms.<br>
+                        Testing and Debugging: Identifying and resolving
+                        errors in the program.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="gallery">
+                <img src="img5.jpg" alt="travel blog">
+                <div>
+                    <h3>My Travel Blog Built with HTML and CSS</h3>
+                    <p>Description:<br>
+                        My travel blog aims to do just that, capturing the
+                        essence of each destination through
+                        captivating visuals, engaging narratives, and
+                        practical travel tips. Whether you're a seasoned
+                        globetrotter or an armchair adventurer, this website
+                        invites you to explore, discover, and
+                        dream.<br><br>
+                        Key Features:<br>
+                        Interactive Photo Galleries: Immerse yourself in
+                        stunning visuals brought to life with CSS
+                        animations and hover effects. Each image tells a
+                        story, transporting you to the heart of the
+                        action.<br>
+                        Compelling Blog Posts: Delve into my personal travel
+                        experiences, woven into captivating
+                        narratives that paint vivid pictures and ignite your
+                        wanderlust. From cultural insights to local
+                        hidden gems, each post offers a unique perspective on
+                        the world.<br>
+                        Destination Guides: Planning your next adventure?
+                        Discover curated guides packed with practical
+                        information, insider tips, and recommendations for
+                        must-see attractions, local eats, and
+                        off-the-beaten-path experiences.<br>
+                        Responsive Design: Navigate the website seamlessly
+                        across any device, from desktops to
+                        smartphones and tablets. The responsive design ensures
+                        an optimal viewing experience, regardless
+                        of your screen size.<br><br>
+                        Skills Acquired and Demonstrated:<br>
+                        Building this website wasn't just about showcasing
+                        breathtaking destinations; it was also a
+                        playground for honing my front-end development skills.
+                        Here's what I learned and showcased:<br>
+                        HTML Structure and Semantics: Crafting a clean and
+                        well-organized website structure using
+                        semantic HTML elements for optimal accessibility and
+                        search engine optimization.<br>
+                        CSS Styling Prowess: Mastering the art of CSS to
+                        create visually appealing layouts, typography,
+                        color palettes, and animations that bring the website
+                        to life.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
